@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.contatoBotao {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  background: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contatoBotao:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.headerConteudo {
+  position: relative;
+  z-index: 3;
+}
+
+.headerConteudo h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.headerConteudo p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.headerConteudo a {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.headerConteudo a:hover {
+  background-color: #0056b3;
+}
+
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 20px;
+  align-items: center;
+}
+
+.sobreTexto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sobreTexto h2 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.sobreTexto h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sobreTexto p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.sobreTexto a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sobreTexto a:hover {
+  text-decoration: underline;
+}
+
+.sobreImage {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sobreImage img {
+  width: 70%;
+  border-radius: 10px;
+  margin-left: 20vh;
+}
+
+.solucao {
+  background-color: #f8f9fa;
+  padding: 40px;
+  text-align: center;
+}
+
+.solucao h2 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.solucao h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.solucaoCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.solucaoCard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.solucaoCard img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.solucaoCard h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.solucaoCard p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.contatos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.ContatosLugar {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+}
+
+.ContatosLugar h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.location-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.lugarCard {
+  text-align: center;
+}
+
+.lugarCard img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.lugarCard p {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.fomulario {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 20px;
+}
+
+.fomulario h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.fomulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fomulario input,
+.fomulario textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.fomulario button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fomulario button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .contatos {
+    flex-direction: column;
+  }
+
+  .ContatosLugar {
+    padding-right: 0;
+  }
+
+  .fomulario {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
